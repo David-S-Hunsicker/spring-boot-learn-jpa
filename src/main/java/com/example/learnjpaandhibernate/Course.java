@@ -1,6 +1,7 @@
 package com.example.learnjpaandhibernate;
 
 public class Course {
+    public Course(){}
     public Course(int id, String name, String author) {
         this.id = id;
         this.name = name;
