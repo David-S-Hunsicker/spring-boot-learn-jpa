@@ -5,7 +5,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 
-
 @Component
 public class CourseJdbcCommandLineRunner implements CommandLineRunner {
     @Autowired
@@ -13,6 +12,8 @@ public class CourseJdbcCommandLineRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        repository.insert();
+        repository.insert(new Course(1, "Learn Azure", "in28minutes"));
+        repository.insert(new Course(5, "Learn AWS", "in28minutes"));
+        repository.deleteById(1);
     }
 }
