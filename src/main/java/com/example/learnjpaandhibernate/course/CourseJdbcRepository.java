@@ -1,4 +1,4 @@
-package com.example.learnjpaandhibernate;
+package com.example.learnjpaandhibernate.course;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;

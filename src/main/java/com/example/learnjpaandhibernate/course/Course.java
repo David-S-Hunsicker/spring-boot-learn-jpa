@@ -1,5 +1,10 @@
-package com.example.learnjpaandhibernate;
+package com.example.learnjpaandhibernate.course;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Course {
     public Course(){}
     public Course(int id, String name, String author) {
@@ -31,8 +36,10 @@ public class Course {
     public void setAuthor(String author) {
         this.author = author;
     }
-
+    @Id
     private long id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "author")
     private String author;
 }
